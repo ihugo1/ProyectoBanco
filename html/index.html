@@ -32,7 +32,8 @@
     <!--Pantalla de acciones-->
     <div class="container" id="panel_de_acciones">
 
-        <div class="card">
+        <!--Perfil del usuario-->
+        <div class=" my-4">
             <div class="row justify-content-md-center">
               <div class="col-md d-flex justify-content-center">
                 <img src="/img/usuario.png" class="img-thumbnail rounded-start m-2">
@@ -49,40 +50,80 @@
 
         <div class="h1 text-center my-4">¿Cómo puedo ayudarlo?</div>
 
+        <!--Panel-->
         <div class="row d-flex justify-content-center">
 
+            <!--Deposito-->
             <div class="col-md-5 d-flex justify-content-center">
                 <div class="card my-4" style="width: 18rem;">
-                    <img class="card-img-top" src="/img/pago.png" alt="Card image cap">
+                    <div class="form-group m-5">
+                        <label for="float">Realizar Deposito:</label>
+                        <input type="float" class="form-control" id="deposito" placeholder="$">
+                    </div>
                     <div class="card-body">
-                      <button type="button" style="width: 100%;" class="btn btn-success">Pagos</button>
+                      <button type="button" style="width: 100%;" class="btn btn-success">Depositar</button>
                     </div>
                 </div>
             </div>
             
+            <!--Retiros-->
             <div class="col-md-5 d-flex justify-content-center">
                 <div class="card my-4" style="width: 18rem;">
-                    <img class="card-img-top" src="/img/retiro.png" alt="Card image cap">
+                    <div class="form-group m-5">
+                        <label for="float">Hacer un retiro:</label>
+                        <input type="float" class="form-control" id="deposito" placeholder="$">
+                    </div>
                     <div class="card-body">
-                        <button type="button" style="width: 100%;" class="btn btn-success">Retiros</button>
+                        <button type="button" style="width: 100%;" class="btn btn-success">Retirar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Consulta de Saldo-->
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="card my-4" style="width: 18rem;">
+                    <div class="form-group m-5">
+                        <label for="float">Su saldo total es de:</label>
+                        <div class="text">$2000</div>
+                    </div>
+                    <div class="card-body">
+                        <button type="button" style="width: 100%;" class="btn btn-success">Consultar su Saldo</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Pago de servicios-->
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="card my-4" style="width: 18rem;">
+                    <div class="form- m-5">
+                        <label for="exampleFormControlSelect1">Seleccione el servicio:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Electricidad</option>
+                          <option>Agua</option>
+                          <option>Telefonía</option>
+                          <option>Internet</option>
+                        </select>
+                      </div>
+                    <div class="card-body">
+                        <button type="button" style="width: 100%;" class="btn btn-success">Pagar servicio</button>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-5 d-flex justify-content-center">
                 <div class="card my-4" style="width: 18rem;">
-                    <img class="card-img-top" src="/img/servicios.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="/img/history.png" alt="Card image cap">
                     <div class="card-body">
-                        <button type="button" style="width: 100%;" class="btn btn-success">Servicios</button>
+                        <button type="button" style="width: 100%;" class="btn btn-success">Historial</button>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-5 d-flex justify-content-center">
                 <div class="card my-4" style="width: 18rem;">
-                    <img class="card-img-top" src="/img/saldo.png" alt="Card image cap">
+                    <img class="card-img-top" src="/img/grafico.png" alt="Card image cap">
                     <div class="card-body">
-                        <button type="button" style="width: 100%;" class="btn btn-success">Saldo</button>
+                        <button type="button" style="width: 100%;" class="btn btn-success">Gráfico de transferencias</button>
                     </div>
                 </div>
             </div>
